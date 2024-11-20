@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import time
 
 # Base URL of the Amazon product reviews page
-base_url = 'https://www.amazon.in/Philips-AC0920-Purifier-Allergens-Bedrooms/dp/B0DB83LFM3/ref=sr_1_3?crid=3KCTILLP9T2DL&dib=eyJ2IjoiMSJ9.J2hFaN8qk-VQiCg8vA2Fz0PP_wNJpy6OtmZhRLvboVO64MWeeExAgzp_Be1Mhy62x6BZJbP-s2J4R-aEOKbyN0WEDSoQgD9dBFG6ZcaA_vwFwbBQV1dxMDpfvjCEwhoUuiLUkw4wyCh5a_SXOEd5OMY-gCcVdXc-mfNbFf7izgNNoEWh40iVNujS2PEc-qWwJczvFT9LK031sIpQALjHxme_j0J2owxzlj1Cz7dc-JQ.73EHnukWVJnS2-Rpdr0J2Ld_2R-YYwzxqG-dFmNE-2w&dib_tag=se&keywords=airpurifier%2Bfor%2Bhome&qid=1732040581&sprefix=airpuri%2Caps%2C252&sr=8-3&th=1'  # Replace with the actual product's review page
+base_url = 'https://www.amazon.in/Safari-Polyester-Softsided-Suitcase-spartan-75-red-2WH/dp/B00R45W232/ref=zg_m_bs_c_luggage_m_sccl_1/262-8463858-2325600?pd_rd_w=F3Y1z&content-id=amzn1.sym.cde02f8b-0594-439d-9e93-f4cced7ce3ce&pf_rd_p=cde02f8b-0594-439d-9e93-f4cced7ce3ce&pf_rd_r=C649N002WWAJBYW1EBFZ&pd_rd_wg=qTXn7&pd_rd_r=4ad99992-2280-4194-a3a1-ac17cafc9d3e&pd_rd_i=B00R45W232&th=1'  # Replace with the actual product's review page
 
 # Create a directory to store the review files
 folder_name = 'scraped_reviews'
@@ -36,7 +36,7 @@ def scrape_reviews(page_url, output_file):
 
 # Pagination handling
 page_number = 1
-file_name = 'amazon_all_reviews.txt'
+file_name = 'amazon_all_reviews_Classic_Mosquito_Net.txt'
 output_file_path = os.path.join(folder_name, file_name)
 
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
@@ -51,3 +51,6 @@ with open(output_file_path, 'w', encoding='utf-8') as output_file:
         time.sleep(2)  # Respectful delay to avoid getting blocked
 
 print(f"Saved all reviews to {output_file_path}")
+
+
+
